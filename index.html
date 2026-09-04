@@ -146,7 +146,7 @@
 
   /* ---------- HEADER ---------- */
   header{
-    position:sticky; top:0; z-index:50;
+    position:relative; z-index:50;
     background:rgba(243,238,227,.86);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
@@ -670,7 +670,8 @@
 
   /* backstage 2-photo strip */
   .backstage-strip{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:44px; max-width:760px; }
-  .backstage-strip img{ width:100%; height:auto; display:block; }
+  .backstage-strip .photo-34{ position:relative; width:100%; padding-top:133%; overflow:hidden; background:var(--paper-2); }
+  .backstage-strip .photo-34 img{ position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block; }
 
   /* gallery mosaic — 3 images */
   .gallery-3{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:0; }
@@ -876,8 +877,8 @@
     <p>Он создаёт визуальную историю: исследует тему, находит референсы, формирует концепцию, подбирает одежду и аксессуары, собирает образы и работает над их воплощением в съёмке.</p>
     <p class="lede">На курсе вы пройдёте этот путь сами — от первой идеи до готовой fashion-съёмки.</p>
     <div class="backstage-strip">
-      <img src="images/backstage-1.jpg" alt="Стилист работает над образом модели на съёмке" loading="lazy" width="1200" height="1600">
-      <img src="images/backstage-2.jpg" alt="Работа со светом и образом на fashion-съёмке" loading="lazy" width="1067" height="1600">
+      <div class="photo-34"><img src="images/backstage-1.jpg" alt="Стилист работает над образом модели на съёмке" loading="lazy" width="1200" height="1600"></div>
+      <div class="photo-34"><img src="images/backstage-2.jpg" alt="Работа со светом и образом на fashion-съёмке" loading="lazy" width="1067" height="1600"></div>
     </div>
   </div>
 </section>
