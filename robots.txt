@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xn--b1amagfc4bi6b3cp.xn--p1ai/sitemap-fashion.xml
